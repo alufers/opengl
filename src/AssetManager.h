@@ -3,12 +3,11 @@
 #include "ShaderProgram.h"
 #include <boost/filesystem.hpp>
 #include <fstream>
+#include <iostream>
 #include <json.hpp>
 #include <mpark/variant.hpp>
 #include <streambuf>
 #include <string>
-#include <iostream>
-#include "ShaderProgram.h"
 using json = nlohmann::json;
 
 class ShaderProgram;
@@ -19,5 +18,8 @@ public:
   std::string dirname(const std::string &path);
   std::string loadText(std::string path);
   json loadJson(std::string json);
+  AssetManager();
+  AssetManager(const AssetManager &) = delete;
+  AssetManager &operator=(const AssetManager &) = delete;
 };
 #endif

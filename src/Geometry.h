@@ -10,6 +10,7 @@ public:
   std::vector<float> vertices;
   GLuint vbo;
   GLuint vao;
+  GLuint ebo;
   Geometry(std::vector<float> vertices);
   ~Geometry();
   Geometry(const Geometry &) = delete;

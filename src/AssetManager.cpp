@@ -1,5 +1,9 @@
 #include "AssetManager.h"
 
+AssetManager::AssetManager() {
+  
+}
+
 std::string AssetManager::resolvePath(const std::string &relative, const std::string &base) {
   return boost::filesystem::canonical(boost::filesystem::path(relative), boost::filesystem::path(base)).string();
 }

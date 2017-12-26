@@ -56,7 +56,6 @@ add_definitions(
 	-DTW_NO_DIRECT3D
 	-DGLEW_STATIC
 	-D_CRT_SECURE_NO_WARNINGS
-	-DSTB_IMAGE_IMPLEMENTATION
 )
 
 
@@ -68,6 +67,9 @@ add_executable(app
 	src/Material.cpp
 	src/AssetManager.cpp
 	src/ShaderProgram.cpp
+	src/Image.cpp
+	src/Texture.cpp
+	src/stb_image.cpp
 )
 target_link_libraries(app
 	${ALL_LIBS}
