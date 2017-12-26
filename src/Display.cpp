@@ -27,7 +27,7 @@ Display::Display() {
   // Ensure we can capture the escape key being pressed below
   glfwSetInputMode(this->window, GLFW_STICKY_KEYS, GL_TRUE);
 
-  glClearColor(0.3f, 0.7f, 0.4f, 0.0f);
+  glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
 }
 
 void Display::swapBuffers() { glfwSwapBuffers(this->window); }

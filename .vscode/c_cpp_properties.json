@@ -36,7 +36,8 @@
                 "/usr/include/x86_64-linux-gnu",
                 "/usr/include",
                 "${workspaceRoot}",
-                "${workspaceRoot}/external/glfw-3.1.2/include/GLFW"
+                "${workspaceRoot}/external/glfw-3.1.2/include/GLFW",
+                "${workspaceRoot}/external/variant/include"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
